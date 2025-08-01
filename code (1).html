@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico Móvil Inteligente | App Promo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4655e71b-f27f-43cb-b56e-eb154532fe25.png" />
+    <style>
+      /* Animación typing effect */
+      @keyframes typing {
+        0% { width: 0; }
+        100% { width: 100%; }
+      }
+      .typing-demo {
+        width: 22ch;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #3b82f6;
+        animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+      }
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+      /* Sombra para tarjetas chat */
+      .chat-bubble {
+        box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+      }
+      /* Botón destacado */
+      .btn-primary {
+        background: linear-gradient(90deg, #3b82f6 50%, #2563eb 100%);
+        color: #fff;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        transition: background 0.2s, transform 0.12s;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(90deg, #2563eb 50%, #3b82f6 100%);
+        transform: scale(1.04);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-blue-50 via-white to-blue-100 min-h-screen">
+
+    <!-- HERO: Imagen y Slogan App -->
+    <header class="relative w-full flex flex-col items-center pt-16 pb-12 bg-gradient-to-b from-blue-100/70 via-white to-blue-200 overflow-visible z-10 before:absolute before:inset-0 before:bg-[url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6d449e55-cd0a-4b2b-be90-1e6127e83251.png')] before:opacity-5 before:bg-repeat before:bg-[length:200px]">
+      <div class="absolute animate-pulse z-0 top-[-40px] left-[-60px] bg-blue-400/30 rounded-full w-72 h-72 blur-2xl"></div>
+      <div class="absolute animate-pulse z-0 bottom-0 right-[-60px] bg-pink-300/20 rounded-full w-80 h-80 blur-2xl"></div>
+      <div class="relative z-10 w-32 h-32 shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)] flex items-center justify-center mb-8 overflow-visible group hover:shadow-[0_0_50px_-5px_rgba(59,130,246,0.8)] transition-all duration-300">
+        <span class="animate-spin-slow absolute top-2 left-1 z-0 w-24 h-24 rounded-full border-4 border-blue-300 border-t-transparent"></span>
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/edc206c9-87e8-4504-a4f4-51cee5495166.png"
+          alt="Ícono vibrante con efecto glow y engranajes giratorios, chatbox sonriente destacando salud móvil"
+          class="object-cover w-24 h-24 rounded-full shadow-xl z-20 border-4 border-white group-hover:scale-110 transition-transform duration-300"
+          onerror="this.style.display='none'"
+        />
+        <span class="absolute -bottom-2 right-0 bg-gradient-to-r from-blue-500 to-yellow-300 px-3 py-1 text-xs rounded-xl text-white font-bold shadow-lg animate-bounce">¡Nueva app!</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 text-center tracking-tight drop-shadow-lg mt-2 mb-2">
+        Descubre la Magia de<br><span class="bg-gradient-to-r from-purple-400 via-blue-500 to-yellow-300 bg-clip-text text-transparent animate-gradient-move">Diagnóstico Móvil Inteligente</span>
+      </h1>
+      <p class="mt-2 text-blue-700 font-semibold text-xl text-center max-w-xl animate-fade-in-up">
+        ¡Dile adiós a los problemas de tu celular!<br>
+        <span class="text-yellow-500 font-bold">Diagnóstico instantáneo</span>, chat súper amigable, respuestas claras, <span class="underline decoration-pink-500 hover:text-pink-600 transition">¡totalmente gratis!</span>
+      </p>
+      <a href="#descarga" class="mt-8 px-8 py-4 btn-primary text-xl shadow-lg hover:shadow-xl animate-pulse hover:animate-none font-extrabold uppercase tracking-wider border-4 border-blue-300 hover:border-yellow-400 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/20 before:via-transparent before:to-white/20 before:animate-shine before:bg-[length:200%_100%]">
+        ¡Probar Ahora!
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </header>
+
+    <!-- FEATURE SECTION: ¿Cómo funciona? -->
+    <section class="relative max-w-4xl mx-auto px-8 py-14 mt-8 mb-2 bg-white/90 rounded-3xl shadow-[0_10px_50px_-10px_rgba(59,130,246,0.3)] border-4 border-blue-100 overflow-visible hover:shadow-[0_15px_60px_-10px_rgba(59,130,246,0.4)] transition-all duration-300 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:bg-gradient-to-r before:from-yellow-400 before:via-pink-500 before:to-blue-500">
+      <div class="absolute left-[-35px] top-[-35px] w-28 h-28 rounded-full bg-gradient-to-br from-yellow-100 via-blue-300/30 to-pink-200 blur-2xl"></div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-5 text-center drop-shadow text-blue-800 relative">
+        <span class="inline-block animate-pulse text-yellow-400">¿Cómo funciona?</span>
+      </h2>
+      <div class="flex flex-wrap flex-row items-stretch gap-6 justify-center">
+        <div class="flex-1 rounded-2xl bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-md p-5 flex flex-col items-center border border-blue-200 max-w-xs min-w-[180px] hover:scale-105 transition">
+          <span class="text-[2.7rem] mb-1 animate-bounce">💬</span>
+          <span class="text-xl font-bold text-blue-700 mb-1">¡Chatea tu problema!</span>
+          <span class="text-blue-800/90 text-base text-center">Cuenta lo que pasa y el bot te entiende al instante.</span>
+        </div>
+        <div class="flex-1 rounded-2xl bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-md p-5 flex flex-col items-center border border-blue-200 max-w-xs min-w-[180px] hover:scale-105 transition">
+          <span class="text-[2.7rem] mb-1 animate-spin-slow">🤖</span>
+          <span class="text-xl font-bold text-blue-700 mb-1">Diagnóstico Smart</span>
+          <span class="text-blue-800/90 text-base text-center">Detecta fallas reales: batería, software, señal y más.</span>
+        </div>
+        <div class="flex-1 rounded-2xl bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-md p-5 flex flex-col items-center border border-blue-200 max-w-xs min-w-[180px] hover:scale-105 transition">
+          <span class="text-[2.7rem] mb-1 animate-bounce">✨</span>
+          <span class="text-xl font-bold text-blue-700 mb-1">Soluciones Fáciles</span>
+          <span class="text-blue-800/90 text-base text-center">Recibe pasos simples y consejos exclusivos.<br><span class="text-yellow-500 font-semibold">¡Listo en minutos!</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO SECTION: Simulación de chat -->
+    <section class="max-w-xl mx-auto mt-12 mb-4 px-2 relative">
+      <div class="bg-gradient-to-b from-blue-200 via-blue-50 to-white rounded-3xl p-0 relative overflow-visible shadow-2xl border-4 border-blue-200 animate-fade-in-up">
+        <div class="flex flex-col h-96 shadow-blue-300/30">
+          <!-- Chat Header -->
+          <div class="flex items-center gap-3 bg-gradient-to-r from-blue-500 via-purple-600 to-blue-400 p-5 rounded-t-3xl relative">
+            <img 
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e4d5e09-5633-4d20-b83d-411d375ca414.png"
+              alt="Avatar friendly robot as chat assistant, minimalistic with blue hues and a friendly smile"
+              class="rounded-full w-11 h-11 border-2 border-white shadow-lg"
+              onerror="this.style.display='none'"
+            />
+            <span class="text-white font-extrabold tracking-wider text-xl drop-shadow">DiagnósticoBot</span>
+            <span class="ml-auto text-lime-300/90 bg-white/10 px-3 py-1 rounded-full text-xs font-extrabold shadow animate-pulse">¡Online!</span>
+          </div>
+          <!-- Chat Body -->
+          <div id="chat-container" class="flex-1 flex flex-col gap-3 overflow-auto p-5 bg-blue-50/80">
+            <div class="chat-bubble self-start bg-white/90 px-5 py-3 rounded-2xl rounded-bl-none text-blue-900 max-w-[85%] shadow">
+              <span class="font-bold text-blue-700">¡Hola! 👋 Soy DiagnósticoBot.<br>¿En qué puedo ayudarte con tu celular?</span>
+            </div>
+            <div class="chat-bubble self-end bg-gradient-to-br from-blue-200 to-pink-100/80 px-5 py-3 rounded-2xl rounded-br-none text-blue-800 font-bold max-w-[85%] shadow">
+              ¡Ayuda! Mi celular se apaga solo 😢 <span id="demo-typing" class="typing-demo"></span>
+            </div>
+            <!-- Respuesta simulada -->
+            <div id="bot-response" class="hidden chat-bubble self-start bg-white/90 px-5 py-3 rounded-2xl rounded-bl-none text-blue-900 max-w-[85%] shadow">
+              <span>
+                <b class="text-purple-600">Diagnóstico:</b> <span class="text-blue-700 font-bold">Batería o sobrecalentamiento.</span><br>
+                <b class="text-blue-500">Solución express:</b>
+                <ul class="list-disc pl-6 mt-1 text-blue-700">
+                  <li>Revisa que la batería no esté hinchada/caliente.</li>
+                  <li>Cierra apps en 2do plano <span class="inline-block animate-bounce">🔋</span></li>
+                  <li>Actualiza tu sistema (seguridad).</li>
+                  <li class="text-pink-600 font-bold">¿Persiste? ¡Consulta técnico calificado!</li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <!-- Chat Input (simulado, sin acción real) -->
+          <div class="flex items-center gap-2 p-4 border-t bg-white/70">
+            <input class="flex-1 rounded-lg border-2 border-blue-200 px-4 py-2 outline-blue-400 bg-blue-50/50 placeholder-blue-400 shadow-inner" type="text" placeholder="Escribe tu duda aquí..." disabled/>
+            <button type="button" class="bg-gradient-to-r from-blue-400 to-pink-400 text-white px-5 py-2 rounded-xl font-bold shadow cursor-not-allowed opacity-80 animate-bounce" disabled>
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="mt-6 text-center text-xl text-white font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl px-6 py-3 shadow-lg hover:shadow-xl transition-all cursor-default animate-bounce inline-block hover:scale-105 hover:animate-none">
+        <span class="relative flex items-center justify-center">
+          <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-yellow-400 opacity-75"></span>
+          <span class="relative">Diagnóstico GRATIS y SOLUCIONES en segundos</span>
+          <span class="ml-2 text-2xl">🚀</span>
+        </span>
+      </p>
+    </section>
+
+    <!-- DESCARGA APP -->
+    <section id="descarga" class="relative mt-16 py-16 px-8 w-full bg-gradient-to-br from-blue-800 via-blue-400 to-indigo-400 overflow-hidden">
+      <div class="absolute -top-10 -left-24 w-96 h-96 rounded-full bg-blue-300/30 blur-3xl z-0"></div>
+      <div class="absolute -bottom-24 -right-24 w-[32rem] h-[32rem] bg-pink-200/20 rounded-full blur-3xl z-0"></div>
+      <div class="relative z-10 max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <div class="flex-shrink-0 w-full md:w-56 flex items-center justify-center md:justify-end">
+          <div class="relative transform hover:-rotate-6 hover:scale-105 transition-all duration-500">
+          <img 
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a50a43fc-ebfb-43c2-bf61-552f00f8be3d.png"
+            alt="Mockup vibrante de pantalla de app móvil, chat moderno, fondo brillante único"
+            class="rounded-2xl w-48 h-80 object-cover border-[6px] border-white shadow-2xl"
+            onerror="this.style.display='none'"
+          />
+          <img 
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51a2226b-606e-4408-9878-dbd7968aa980.png"
+            alt="Mini pantalla colorida con chatbot activo y mensaje de error móvil"
+            class="absolute -right-10 top-9 w-16 h-36 rounded-xl opacity-90 shadow-xl border-4 border-blue-200 rotate-6"
+            onerror="this.style.display='none'"
+          />
+          <span class="absolute left-3 top-1 animate-bounce bg-yellow-300 text-yellow-900 text-xs px-4 py-1 rounded-full shadow-lg font-bold rotate-[-4deg]">¡Gratis!</span>
+          </div>
+        </div>
+        <div class="flex-1 text-white">
+          <h3 class="text-white text-3xl font-extrabold mb-3 drop-shadow-lg tracking-tight">
+            ¡La salud de tu celular en segundos!
+          </h3>
+          <p class="text-blue-50 text-lg mb-7 font-medium">
+            <span class="bg-white/10 px-2 py-1 rounded-lg">Disponible para Android e iOS.</span>
+            Descubre fallas, recibe soluciones, y potencia tu experiencia.<br>
+            <span class="font-semibold text-yellow-300">Te guiamos como si tuvieras un técnico en tu bolsillo.</span>
+          </p>
+          <div class="flex flex-wrap gap-5">
+            <a href="https://play.google.com/store/apps/details?id=com.ejemplo.diagnostico" target="_blank" rel="noopener" class="relative bg-gradient-to-br from-green-400 via-blue-500 to-blue-700 flex items-center gap-3 px-6 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 hover:from-green-500 hover:via-blue-700 hover:to-blue-900 transition transform duration-200">
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 animate-bounce bg-yellow-300 text-yellow-900 text-xs px-2 py-1 rounded-full">¡Nuevo!</span>
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/95a0a675-d7d3-4f6a-8cf2-f12e4275bb13.png" alt="Logo Google Play Store moderno y brillante" class="w-10 h-10 drop-shadow" onerror="this.style.display='none'"/>
+              <div class="flex flex-col leading-tight">
+                <span class="text-white text-lg leading-tight font-black drop-shadow">Consíguelo en</span>
+                <span class="text-white text-xl tracking-wider font-extrabold drop-shadow">Google Play</span>
+              </div>
+            </a>
+            <a href="https://apps.apple.com/es/app/diagnostico-movil-inteligente/id1234567890" target="_blank" rel="noopener" class="relative bg-gradient-to-br from-black via-gray-900 to-blue-700 flex items-center gap-3 px-6 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 hover:from-blue-900 hover:via-gray-950 hover:to-black transition transform duration-200">
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 animate-pulse bg-pink-400 text-white text-xs px-2 py-1 rounded-full">Premium</span>
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18406bce-0db0-4688-ae75-f38caa2bf52c.png" alt="Logo App Store efecto 3D brillante azul y negro" class="w-10 h-10 drop-shadow" onerror="this.style.display='none'"/>
+              <div class="flex flex-col leading-tight">
+                <span class="text-white text-lg leading-tight font-black drop-shadow">Disponible en</span>
+                <span class="text-white text-xl tracking-wider font-extrabold drop-shadow">App Store</span>
+              </div>
+            </a>
+            <a href="https://apps.apple.com/es/app/diagnostico-movil-inteligente/id1234567890" target="_blank" rel="noopener" class="relative bg-gradient-to-br from-black via-gray-900 to-blue-700 flex items-center gap-3 px-6 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 hover:from-blue-900 hover:via-gray-950 hover:to-black transition transform duration-200">
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 animate-pulse bg-pink-400 text-white text-xs px-2 py-1 rounded-full">FREE</span>
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18406bce-0db0-4688-ae75-f38caa2bf52c.png" alt="Logo App Store efecto 3D brillante azul y negro" class="w-10 h-10 drop-shadow" onerror="this.style.display='none'"/>
+              <div class="flex flex-col leading-tight">
+                <span class="text-white text-lg leading-tight font-black drop-shadow">PROVAR AHORA</span>
+                <span class="text-white text-xl tracking-wider font-extrabold drop-shadow">DA CLIK AQUI</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full mt-14 py-6 bg-gradient-to-r from-blue-900 via-blue-600 to-pink-600 text-blue-50 text-center text-base tracking-widest relative">
+      <div class="mb-2 animate-pulse">
+        <span class="font-black text-lg text-yellow-300 drop-shadow">¡Sana tu CELULAR y recupera tu VIDA DIGITAL!</span>
+      </div>
+      <div class="flex gap-2 justify-center items-center font-bold text-blue-50/90">
+        <span>2024 &copy; Diagnóstico Móvil Inteligente | </span>
+        <span class="bg-yellow-300/80 text-blue-900 px-2 py-0.5 rounded-md text-xs ml-1">#CuidaTuMóvil</span>
+      </div>
+      <div class="mt-2 flex justify-center gap-5 text-xl">
+        <a href="https://apps.apple.com/es/app/diagnostico-movil-inteligente/id1234567890" target="_blank" rel="noopener" class="hover:underline hover:text-yellow-300 font-bold transition">Descargar Gratis</a>
+        <a href="https://wa.me/51930424493?text=Necesito%20informaci%C3%B3n%20sobre%20la%20app%20Diagn%C3%B3stico%20M%C3%B3vil" target="_blank" rel="noopener" class="hover:underline hover:text-pink-100 font-bold transition">Contacto</a>
+        <a href="soporte-app.html" class="hover:underline hover:text-blue-200 font-bold transition">Soporte</a>
+      </div>
+    </footer>
+
+    <script>
+      // Chat demo - typing effect y muestra respuesta simulada
+      window.addEventListener('DOMContentLoaded', () => {
+        // Add shine animation
+        document.querySelector('.btn-primary').addEventListener('mouseenter', function() {
+          this.classList.add('animate-none');
+        });
+        
+        // Chat animation
+        setTimeout(() => {
+          document.getElementById('demo-typing').remove();
+          document.getElementById('bot-response').classList.remove('hidden');
+          
+          // Scroll chat to bottom
+          const chatContainer = document.getElementById('chat-container');
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        }, 2200);
+      });
+      
+      // Add shine animation to CSS
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes shine {
+          0% {background-position: -50% 0}
+          100% {background-position: 150% 0}
+        }
+        .animate-shine {
+          animation: shine 2s infinite;
+        }
+      `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>
+
